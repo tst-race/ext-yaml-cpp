@@ -56,6 +56,7 @@ if __name__ == "__main__":
                 f"-DCMAKE_STAGING_PREFIX={args.install_dir}",
                 f"-DCMAKE_INSTALL_PREFIX={args.install_prefix}",
                 "-DBUILD_SHARED_LIBS=ON",
+                "-DYAML_CPP_BUILD_TESTS=OFF",
             ],
             env=env,
         )
